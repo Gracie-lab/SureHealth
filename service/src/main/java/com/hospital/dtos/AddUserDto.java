@@ -9,5 +9,6 @@ public class AddUserDto {
     private String phone_number;
     private String email;
     private String address;
+    private String password;
 
 }

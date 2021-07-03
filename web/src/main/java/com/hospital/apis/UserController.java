@@ -21,8 +21,8 @@ public class UserController {
 
     @PostMapping("/add-user")
     public ResponseEntity<?> registerDoctor(@RequestBody AddUserDto request) throws AppException{
-        var response = userService.addUser(request);
-        return (ResponseEntity<?>) ResponseEntity.ok(response);
+        var response = userService.addUsers(request);
+        return ResponseEntity.ok(response);
     }
 
     public ResponseEntity<?> removeUser(@RequestBody RemoveUserRequest request){
